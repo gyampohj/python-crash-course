@@ -1,5 +1,12 @@
-car = 'subaru'
-print("Is car == 'subaru'? I predict True.")
-print(car == 'subaru')
-print("\nIs car == 'audi'? I predict False.")
-print(car == 'audi')
+#adding values to dict
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0)
+alien_0['x_position'] = 0
+alien_0['y_position'] = 25
+print(alien_0)
+
+#Empty string 
+alien_0 = {}
+alien_0['color'] = 'green'
+alien_0['points'] = 5
+print(alien_0)#
