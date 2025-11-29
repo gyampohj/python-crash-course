@@ -4,6 +4,6 @@ glossary = {
     'comment' : 'A description to a line or lines of code'
     #you can add more words for practice
 }
-print(glossary['comment'])
-print(glossary['indent'])
-print(glossary['string'])
+for key, value in glossary.items():
+    print(f"\nKey : {key}")
+    print(f"Value : {value}")
