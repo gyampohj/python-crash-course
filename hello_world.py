@@ -1,22 +1,28 @@
-#adding values to dict
-alien_0 = {'color': 'green', 'points': 5}
-print(alien_0)
-alien_0['x_position'] = 0
-alien_0['y_position'] = 25
-print(alien_0)
+# Start with users that need to be verified,
+# and an empty list to hold confirmed users.
 
-#Empty string 
-alien_0 = {}
-alien_0['color'] = 'green'
-alien_0['points'] = 5
-print(alien_0)#
+unconfirmed_users = ['alice', 'brian', 'candace']
+confirmed_users = []
 
-for username, user_info in users.items():
+# Verify each user until there are no more unconfirmed users.
+# Move each verified user into the list of confirmed users.
+while unconfirmed_users:
 
-    print(f"\nUsername: {username}")
+    current_user = unconfirmed_users.pop()
 
-full_name = f"{user_info['first']} {user_info['last']}"
-location = user_info['location']
+    print(f"Verifying user: {current_user.title()}")
+    confirmed_users.append(current_user)
 
-print(f"\tFull name: {full_name.title()}")
-print(f"\tLocation: {location.title()}")
+    # Display all confirmed users.
+    print("\nThe following users have been confirmed:")
+    for confirmed_user in confirmed_users:
+        print(confirmed_user.title())
+
+
+
+#filling with user input
+pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+print(pets)
+while 'cat' in pets:
+    pets.remove('cat')
+    print(pets)
