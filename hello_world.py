@@ -1,19 +1,16 @@
-def make_pizza(*toppings):
-    """Print the list of toppings that have been requested."""
-    print(toppings)
+class Dog:
+    """A simple attempt to model a dog."""
 
-make_pizza('pepperoni')
-make_pizza('mushrooms', 'green peppers', 'extra cheese')
+    def __init__(self, name, age):
+        """Initialize name and age attributes."""
+        self.name = name
+        self.age = age
+        
+    def sit(self):
+        """Simulate a dog sitting in response to a command."""
 
+    print(f"{self.name} is now sitting.") # type: ignore
 
-
-
-#Mixing positional arguments
-def make_pizza(size, *toppings):
-    """Summarize the pizza we are about to make."""
-    print(f"\nMaking a {size}-inch pizza with the following toppings:")
-    for topping in toppings:
-        print(f"- {topping}")
-
-make_pizza(16, 'pepperoni')
-make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+    def roll_over(self):
+        """Simulate rolling over in response to a command."""
+        print(f"{self.name} rolled over!")
