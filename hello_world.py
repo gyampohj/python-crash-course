@@ -1,28 +1,19 @@
-# Start with users that need to be verified,
-# and an empty list to hold confirmed users.
+def make_pizza(*toppings):
+    """Print the list of toppings that have been requested."""
+    print(toppings)
 
-unconfirmed_users = ['alice', 'brian', 'candace']
-confirmed_users = []
-
-# Verify each user until there are no more unconfirmed users.
-# Move each verified user into the list of confirmed users.
-while unconfirmed_users:
-
-    current_user = unconfirmed_users.pop()
-
-    print(f"Verifying user: {current_user.title()}")
-    confirmed_users.append(current_user)
-
-    # Display all confirmed users.
-    print("\nThe following users have been confirmed:")
-    for confirmed_user in confirmed_users:
-        print(confirmed_user.title())
+make_pizza('pepperoni')
+make_pizza('mushrooms', 'green peppers', 'extra cheese')
 
 
 
-#filling with user input
-pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
-print(pets)
-while 'cat' in pets:
-    pets.remove('cat')
-    print(pets)
+
+#Mixing positional arguments
+def make_pizza(size, *toppings):
+    """Summarize the pizza we are about to make."""
+    print(f"\nMaking a {size}-inch pizza with the following toppings:")
+    for topping in toppings:
+        print(f"- {topping}")
+
+make_pizza(16, 'pepperoni')
+make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
