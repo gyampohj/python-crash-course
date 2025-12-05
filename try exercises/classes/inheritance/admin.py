@@ -15,5 +15,5 @@ class Admin(User):
 
 """Usage"""
 admin = Admin("Holmes", "Master")
-admin.show_privileges()           
+admin.show_privileges           
     
