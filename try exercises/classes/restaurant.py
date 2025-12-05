@@ -10,8 +10,7 @@ class Restaurant:
     def open_restaurant(self):
         print(f"{self.restaurant_name} is now open!")
 
-restaurant = Restaurant("Vida E Cafe", "Continental"
-)
+restaurant = Restaurant("Vida E Cafe", "Continental")
 print(restaurant.restaurant_name)
 print(restaurant.cuisine_type)
 restaurant.describe_restaurant()
