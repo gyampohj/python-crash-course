@@ -1,9 +1,10 @@
 from pathlib import Path
 
 path = Path('learning_python.txt')
-
-"""accessing the contents of a file"""
 contents = path.read_text()
-print(contents)
 
+"""accessing a file's lines"""
+lines = contents.splitlines()
+for line in lines:
+    print(line)
 
