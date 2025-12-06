@@ -1,0 +1,4 @@
+you can write your own modules in python. 
+python also allows you to write your own classes and later call them in code.
+You can perform basic to advanced arithmetical operations in python.
+Python has many libraries for performing each tasks seperately.
