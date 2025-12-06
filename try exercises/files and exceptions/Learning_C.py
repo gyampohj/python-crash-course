@@ -6,4 +6,4 @@ contents = path.read_text()
 """"replacing a word in a string"""
 lines = contents.splitlines()
 for line in lines:
-    print(line.replace('Python', 'C'))
+    print(line.replace('Python', 'C'))  
